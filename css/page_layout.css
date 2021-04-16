@@ -61,22 +61,27 @@ page {
     background-image: url("../assets/bg/liyue_sunset.png"); 
     padding-top: 50px;
     background-size: cover; 
+    min-width: 100%;
 } .markets_section {
     margin: auto;
     width: 100%;
     height: 100%;
     background-image: url("../assets/bg/liyue_day.png");
     background-size: cover;
+    min-width: 100%;
 } .products_section {
+    display: flex;
     margin: auto;
     width: 100%;
     height: 100%;
     background-image: url("../assets/bg/liyue_in_night.png");
     background-size: cover;
+    min-width: 100%;
 } .about_section {
     margin: auto;
     width: 100%;
     height: 100%;
     background-image: url("../assets/bg/liyue_in_sunset.png");
     background-size: cover; 
+    min-width: 100%;
 }

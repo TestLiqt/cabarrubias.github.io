@@ -1,0 +1,41 @@
+.item-selector {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.4);
+    height: 100%;
+    width: 60px;
+    left: 2%;
+    padding-top: 2%;
+    min-width: 80px;
+}
+
+.item-selector > .item {
+    height: 100%;
+    border: #FEFEFE 2px;
+    transition: 0.1s;
+    justify-content: center;
+}
+
+.item-selector > .item:hover {
+    border-left-style: solid;
+}
+.item-selector > .item > img {
+    width: 50%;
+    min-width: 80px;
+    padding-top: 20px;
+}
+
+.item_display {
+    position: relative;
+    background: rgba(0,0,0,.4);
+}
+
+.img_display {
+    position: absolute;
+    right: 0;
+    height: 256px;
+    width: 256px;
+    background-image: url("../assets/specialties/chili.png");
+    transition: 0.3s;
+}

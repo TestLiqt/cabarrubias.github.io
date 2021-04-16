@@ -35,5 +35,37 @@
     } page p {
         font-size: 20px;
     }
+
+    .item-selector {
+        padding-top: 5%;
+        min-width: 40px;
+        overflow-y: scroll;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+    } .item-selector::-webkit-scrollbar {
+        display: none;
+    }
+
+    .item-selector > .item > img {
+        width: 30%;
+        min-width: 30px;
+        padding-top: 20px;
+    }
+
+    .item_display {
+        margin: 20px 20px;
+        width: 90%;
+    }
+}
+
+/*For only specific panels. */
+@media only screen and (min-width: 900px) {
+    .item_display {
+        position: relative;
+        background: rgba(0,0,0,.4);
+        margin: 20px 20px;
+        width: 100%;
+        margin-left: 4%;
+    }
 }
 
