@@ -1,7 +1,7 @@
 <!-- Started 4/15/2021 -->
 <html>
     <head>
-        <title>Liyue Harbor</title>
+        <title>Liyue Harbor | Prosperous Port City </title>
         <link rel="icon" href="assets/icons/liyue.png">
         <link rel="stylesheet" href="css/page_layout.css">
         <link rel="stylesheet" href="css/keyframes.css">
@@ -26,27 +26,29 @@
         </header>
         <sidebar id="sidebar"> 
             <div id="navbar-2" class="sidebar-flex">
-                <img class="closebtn" src="assets/icons/x.png" onclick="close_sidebar(); close_win();">
+                <div class="sidebar_header"> 
+                    <img class="closebtn" src="assets/icons/x.png" onclick="close_sidebar(); close_win();">
+                </div>
                 <a href="#firstpart" onclick="switch_win_type();">Home</a>
                 <a href=#markets onclick="switch_win_type();">Markets</a>
-                    <div class="_sub">Dongsheng</div>
-                    <div class="_sub">Wanmin Restaurant</div>
-                    <div class="_sub">Master Zhang</div>
-                    <div class="_sub">Verr Goldet</div>
-                    <div class="_sub">Herbalist Gui</div>
-                    <div class="_sub">Shitou</div>
-                    <div class="_sub">Bolai</div>
-                    <div class="_sub">Uncle Sun</div>
-                    <div class="_sub">Uncle Gao</div>
+                    <div class="_sub" onclick="switch_task_type();">Dongsheng</div>
+                    <div class="_sub" onclick="switch_task_type();">Wanmin Restaurant</div>
+                    <div class="_sub" onclick="switch_task_type();">Master Zhang</div>
+                    <div class="_sub" onclick="switch_task_type();">Verr Goldet</div>
+                    <div class="_sub" onclick="switch_task_type();">Herbalist Gui</div>
+                    <div class="_sub" onclick="switch_task_type();">Shitou</div>
+                    <div class="_sub" onclick="switch_task_type();">Bolai</div>
+                    <div class="_sub" onclick="switch_task_type();">Uncle Sun</div>
+                    <div class="_sub" onclick="switch_task_type();">Uncle Gao</div>
                 <a href=#products onclick="switch_win_type();">Specialties</a>
-                    <div class="_sub">Juyeun Chili</div>
-                    <div class="_sub">Cor Lapis</div>
-                    <div class="_sub">Glaze Lily</div>
-                    <div class="_sub">Noctilucous Jade</div>
-                    <div class="_sub">Qingxin</div>
-                    <div class="_sub">Silk Flower</div>
-                    <div class="_sub">Starconch</div>
-                    <div class="_sub">Violetgrass</div>
+                    <div class="_sub" onclick="switch_task_type();"><img src="assets/specialties/chili.png">Juyeun Chili</div>
+                    <div class="_sub" onclick="switch_task_type();"><img src="assets/specialties/cor_lapis.png">Cor Lapis</div>
+                    <div class="_sub" onclick="switch_task_type();"><img src="assets/specialties/glaze_lily.png">Glaze Lily</div>
+                    <div class="_sub" onclick="switch_task_type();"><img src="assets/specialties/jade.png">Noctilucous Jade</div>
+                    <div class="_sub" onclick="switch_task_type();"><img src="assets/specialties/qingxin.png">Qingxin</div>
+                    <div class="_sub" onclick="switch_task_type();"><img src="assets/specialties/silk_flower.png">Silk Flower</div>
+                    <div class="_sub" onclick="switch_task_type();"><img src="assets/specialties/starconch.png">Starconch</div>
+                    <div class="_sub" onclick="switch_task_type();"><img src="assets/specialties/violetgrass.png">Violetgrass</div>
                 <a href=#about onclick="switch_win_type();">About</a>
             </div>
         </sidebar>
