@@ -59,7 +59,8 @@
     overflow-x: hidden;
     padding-top: 85px;
     -ms-overflow-style: none; 
-    scrollbar-width: none;  
+    scrollbar-width: none; 
+    z-index: 5; 
 } .sidebar-flex::-webkit-scrollbar {
     display: none;
 } .sidebar-flex:hover {
@@ -83,4 +84,14 @@
     filter: invert(1);
 } .sidebar-flex .closebtn:hover {
     transform: rotate(90deg);
+} .sidebar-flex > ._sub {
+    width: 100%;
+    border: 2px #EFEFEF;
+    border-bottom-style: solid;
+    padding: 8px 8px 8px 58px;
+    min-width: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+} .sidebar-flex > ._sub:hover {
+    background: #EFEFEF;
 }
