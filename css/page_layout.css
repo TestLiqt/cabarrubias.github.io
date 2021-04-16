@@ -82,4 +82,5 @@ page {
     background-image: url("../assets/bg/liyue_in_sunset.png");
     background-size: cover; 
     min-width: 100%;
+    z-index: 9;
 }
