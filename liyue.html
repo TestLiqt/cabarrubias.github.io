@@ -1,0 +1,67 @@
+<!-- Started 4/15/2021 -->
+<html>
+    <head>
+        <title>Liyue Harbor</title>
+        <link rel="icon" href="assets/icons/liyue.png">
+        <link rel="stylesheet" href="css/page_layout.css">
+        <link rel="stylesheet" href="css/keyframes.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+<body>
+    <img id="welcome_message" class="welcome_message" src="assets/welcome_message.png" onclick="close_wc_msg();">
+    <grid-display id="grid-display">
+        <header>
+            <div id="navbar-1" class="navbar-flex" for="toggle_always_on">
+                <img class="responsive_sidebar_icon" src="assets/icons/sidebar.png" onclick="open_sidebar();">
+                <a href="https://genshin.mihoyo.com/en/home" class="hoverable"><img class="genshin_logo" src="assets/genshin_logo.png"></a>
+                <a href=#firstpart class="hoverable">Home</a>
+                <a href=#markets class="hoverable">Markets</a>
+                <a href=#products class="hoverable">Products</a>
+                <a href=#about class="hoverable">About</a>
+            </div>
+        </header>
+        <sidebar id="sidebar"> 
+            <div id="navbar-2" class="sidebar-flex">
+                <img class="closebtn" src="assets/icons/x.png" onclick="close_sidebar();">
+                <a href="#firstpart">Home</a>
+                <a href=#markets>Markets</a>
+                <a href=#products>Products</a>
+                <a href=#about>About</a>
+            </div>
+        </sidebar>
+        <page id="page">
+            <div class="firstpart" id="firstpart">
+                <div class="liyue_intro">
+                    <h1>Liyue Harbor</h1>
+                    <p> A prosperous port city where a thousand ships drop anchor. Under the aegis of countless contracts and regulations, <br> 
+                    innumerable goods change hands and grace the seven nations with their presence. </p>
+                </div>
+            </div>
+            <a name="markets">
+                <div class="markets_section">
+                    <!--To be continued-->
+                </div>
+            </a>
+            <a name="products">
+                <div class="products_section">
+                    <!--To be continued-->
+                </div>
+            </a>
+            <a name="about">
+                <div class="about_section">
+                    <!--To be continued-->
+                </div>
+            </a>
+
+        </page>
+    </grid-display>
+    <script>
+        function close_wc_msg() { document.getElementById("welcome_message").style.display="none"; var audio = new Audio('assets/audio/bg.mp3'); audio.play(); }
+        function open_sidebar() { document.getElementById("navbar-2").style.width="250px"; }
+        function close_sidebar() { document.getElementById("navbar-2").style.width="0"; }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Genshin';
+    src: url('../assets/fonts/ja-jp.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: 'Genshin';
+    font-weight: 100;
+}
+
+grid-display {
+    display: grid;
+    grid-template-columns: 0fr 2fr;
+    grid-template-rows: 0fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "header header"
+    "sidebar page"
+    "sidebar page"
+    "sidebar page"
+    "sidebar page"
+    "sidebar page"
+    "sidebar page";
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+sidebar {
+    grid-area: sidebar;
+    background: transparent;
+    transition: 0.5s;
+    justify-content: center;
+} 
+
+page {
+    grid-area: page;
+    overflow-y: scroll; 
+} page h1 {
+    color: white;
+    text-align: center;
+    font-size: 85px;
+    text-shadow: 3px 3px 4px rgb(31, 31, 31);
+    padding-top: 5%;
+} page p {
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgb(31, 31, 31);
+    text-align: center;
+}
+
+.firstpart {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg/liyue_sunset.png"); 
+    padding-top: 50px;
+    background-size: cover; 
+} .markets_section {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg/liyue_day.png");
+    background-size: cover;
+} .products_section {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg/liyue_in_night.png");
+    background-size: cover;
+} .about_section {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg/liyue_in_sunset.png");
+    background-size: cover; 
+}

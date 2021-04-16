@@ -1,0 +1,23 @@
+@keyframes appearWelcomeMessage {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@keyframes disappearWelcomeMessage {
+    0% { opacity: 100%; }
+    100% { opacity: 0%;  }
+}
+
+.welcome_message {
+    position: absolute;
+    min-width: 500px;
+    width: 30%;
+    z-index: 5;
+    animation: 1s ease-out 0s 1 appearWelcomeMessage;
+    bottom: 5px;
+    transition: 0.3s;
+}
+
+.welcome_message:hover {
+    bottom: 10px;
+}
