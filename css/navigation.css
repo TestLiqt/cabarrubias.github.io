@@ -76,7 +76,7 @@
     background: #E5E5E5;
     border-bottom-style: solid;
 } .sidebar-flex > a:hover {
-    padding-left: 45px;
+    background: #9EA4AF;
 } .sidebar-flex .closebtn {
     position: absolute;
     top: 10;
@@ -90,11 +90,12 @@
     width: 100%;
     border: 2px #EFEFEF;
     border-bottom-style: solid;
-    padding: 8px 8px 8px 58px;
+    padding: 8px 8px 8px 49px;
     min-width: 300px;
     cursor: pointer;
     transition: 0.3s;
     color: #383F4C;
+    font-size: 19px;
 } .sidebar-flex > ._sub:hover {
     background: #EFEFEF;
 } .sidebar-flex > ._sub > img {
@@ -104,5 +105,5 @@
 .sidebar_header { 
     width: 100%;
     background: #393B40;
-    height: 90%;
+    height: 100%;
 }
