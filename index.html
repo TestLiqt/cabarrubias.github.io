@@ -15,17 +15,17 @@
     <grid-display id="grid-display">
         <header>
             <div id="navbar-1" class="navbar-flex" for="toggle_always_on">
-                <img class="responsive_sidebar_icon" src="assets/icons/sidebar.png" onclick="open_sidebar();">
+                <img class="responsive_sidebar_icon" src="assets/icons/sidebar.png" onclick="open_sidebar(); open_win();">
                 <a href="https://genshin.mihoyo.com/en/home" class="hoverable"><img class="genshin_logo" src="assets/genshin_logo.png"></a>
-                <a href=#firstpart class="hoverable">Home</a>
-                <a href=#markets class="hoverable">Markets</a>
-                <a href=#products class="hoverable">Products</a>
-                <a href=#about class="hoverable">About</a>
+                <a href=#firstpart class="hoverable" onclick="switch_task_type();">Home</a>
+                <a href=#markets class="hoverable" onclick="switch_task_type();">Markets</a>
+                <a href=#products class="hoverable" onclick="switch_task_type();">Products</a>
+                <a href=#about class="hoverable" onclick="switch_task_type();">About</a>
             </div>
         </header>
         <sidebar id="sidebar"> 
             <div id="navbar-2" class="sidebar-flex">
-                <img class="closebtn" src="assets/icons/x.png" onclick="close_sidebar();">
+                <img class="closebtn" src="assets/icons/x.png" onclick="close_sidebar(); close_win();">
                 <a href="#firstpart">Home</a>
                 <a href=#markets>Markets</a>
                 <a href=#products>Products</a>
@@ -62,6 +62,10 @@
         function close_wc_msg() { document.getElementById("welcome_message").style.display="none"; var audio = new Audio('assets/audio/bg.mp3'); audio.play(); }
         function open_sidebar() { document.getElementById("navbar-2").style.width="250px"; }
         function close_sidebar() { document.getElementById("navbar-2").style.width="0"; }
+        function open_win() { var win_opened_audio = new Audio('assets/audio/fx/open_win.mp3'); win_opened_audio.play(); }
+        function close_win() { var win_closed_audio = new Audio('assets/audio/fx/close_win.mp3'); win_closed_audio.play(); }
+        function switch_win_type() { var type_audio = new Audio('assets/audio/fx/switch_type.mp3'); type_audio.play(); }
+        function switch_task_type() { var task_audio = new Audio('assets/audio/fx/switch_task.mp3'); task_audio.play(); } 
     </script>
 </body>
 </html>
