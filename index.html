@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/navigation.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/scrollbar.css">
         <meta name="viewport" content="width=device-width">
     </head>
 <body>
@@ -26,10 +27,10 @@
         <sidebar id="sidebar"> 
             <div id="navbar-2" class="sidebar-flex">
                 <img class="closebtn" src="assets/icons/x.png" onclick="close_sidebar(); close_win();">
-                <a href="#firstpart">Home</a>
-                <a href=#markets>Markets</a>
-                <a href=#products>Products</a>
-                <a href=#about>About</a>
+                <a href="#firstpart" onclick="switch_win_type();">Home</a>
+                <a href=#markets onclick="switch_win_type();">Markets</a>
+                <a href=#products onclick="switch_win_type();">Products</a>
+                <a href=#about onclick="switch_win_type();">About</a>
             </div>
         </sidebar>
         <page id="page">
