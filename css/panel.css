@@ -36,6 +36,11 @@
     background: rgba(0,0,0,.4);
     box-shadow: 6px 6px rgba(1, 1, 1, 0.6);
     display: flex;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+} .item_display::-webkit-scrollbar {
+    display: none;
 }
 
 .img_display {
@@ -65,14 +70,35 @@
     text-align: left;
     font-size: 24px;
     color: #F4D8A8;
-    width: 75%;
+    width: 79%;
     transition: 0.3s;
 }
 
 .item_description > hr {
     width: 70%;
+    color: #CFD0D1;
 }
 
 .padding {
     padding: 20px;
+}
+
+#ascension_usage {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#ascension_usage td, #ascension_usage th {
+    padding: 8px;
+    color: #F4D8A8;
+}
+
+#ascension_usage tr { background-color: #222326; }
+
+#ascension_usage th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #393B40;
+    color: #ddd;
 }

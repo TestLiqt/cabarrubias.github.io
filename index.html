@@ -69,8 +69,8 @@
             <a name="products">
                 <div class="products_section">
                     <div class="item-selector">
-                        <div class="item" onclick="switch_image('assets/specialties/chili.png')"><img src="assets/specialties/chili.png"></div>
-                        <div class="item" onclick="switch_image('assets/specialties/cor_lapis.png')"><img src="assets/specialties/cor_lapis.png"></div>
+                        <div class="item" onclick="switch_image('assets/specialties/chili.png'); add_character('assets/ascension/xiangling.png', 'Xiangling', 'assets/icons/rarity_4.png', 1); remove_character(2); remove_character(3); change_item('juyeun_chili');"><img src="assets/specialties/chili.png"></div>
+                        <div class="item" onclick="switch_image('assets/specialties/cor_lapis.png'); add_character('assets/ascension/chongyun.png', 'Chongyun', 'assets/icons/rarity_4.png', 1); add_character('assets/ascension/keqing.png', 'Keqing', 'assets/icons/rarity_5.png', 2); add_character('assets/ascension/zhongli.png', 'Zhongli', 'assets/icons/rarity_5.png', 3); change_item('cor_lapis');"><img src="assets/specialties/cor_lapis.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/glaze_lily.png')"><img src="assets/specialties/glaze_lily.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/jade.png')"><img src="assets/specialties/jade.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/qingxin.png')"><img src="assets/specialties/qingxin.png"></div>
@@ -81,16 +81,40 @@
 
                     <div class="item_display">
                         <div class="item_description" id="item_desc">
-                            <h1>Juyeun Chili</h1>
+                            <h1 id="item_title_name">Juyeun Chili</h1>
                             <div class="padding"></div>
                             <hr>
                             <div class="padding"></div>
-                            <p>A spicy plant native to Liyue. Merely smelling it makes one hot and thirsty. Despite "Jueyun" being a part of its name, it does not usually grow in Jueyun Karst. The name seems to originate from its spiciness, which makes people want to run to the highest peaks of Jueyun and cool their mouths with chilly air.</p>
+                            <p id="item_description_1">A spicy plant native to Liyue. Merely smelling it makes one hot and thirsty. Despite "Jueyun" being a part of its name, it does not usually grow in Jueyun Karst. The name seems to originate from its spiciness, which makes people want to run to the highest peaks of Jueyun and cool their mouths with chilly air.</p>
                             <div class="padding"></div>
-                            <p>Jueyun Chili can be found exclusively within the Liyue Region.
-                                Wanmin Restaurant carries 5 Jueyun Chili in stock, refreshing at daily reset every 2 days. There is a quest-exclusive variant of this ingredient, Fresh Jueyun Chili.
-                                
+                            <p id="item_description_2">Jueyun Chili can be found exclusively within the Liyue Region.
+                                Wanmin Restaurant carries 5 Jueyun Chili in stock, refreshing at daily reset every 2 days. There is a quest-exclusive variant of this ingredient, Fresh Jueyun Chili.      
                                 Following one of Manie's dialogue branches for the first time gives 5 Jueyun Chilis.</p>
+                            <div class="padding"></div>
+                            <div class="lazy_table" id="lazy_table">
+                                <table id="ascension_usage">
+                                    <tr>
+                                      <th>Icon</th>
+                                      <th>Name</th>
+                                      <th>Character Rarity</th>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/ascension/xiangling.png" id="row-1-char_icon"></td>
+                                        <td id="row-1-char_name">Xiangling</td>
+                                        <td><img src="assets/icons/rarity_4.png" id="row-1-char_rarity"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="row-2-char_icon"></td>
+                                        <td id="row-2-char_name"></td>
+                                        <td><img id="row-2-char_rarity"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="row-3-char_icon"></td>
+                                        <td id="row-3-char_name">Xiangling</td>
+                                        <td><img id="row-3-char_rarity"></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                         <div class="img_display" id="img_display"></div>
                     </div>
@@ -103,27 +127,7 @@
             </a>
 
         </page>
+        <script src="js/main.js"></script>
     </grid-display>
-    <script>
-        document.querySelectorAll('.hoverable').forEach(item => {
-            item.addEventListener('click', event => {
-                switch_task_type();
-            })
-        });
-        document.querySelectorAll('._sub').forEach(item => {
-            item.addEventListener('click', event => {
-                switch_task_type();
-            })
-        })
-        function close_wc_msg() { document.getElementById("welcome_message").style.display="none"; var audio = new Audio('assets/audio/alt_bg.mp3'); audio.play(); }
-        function open_sidebar() { document.getElementById("navbar-2").style.width="250px"; }
-        function close_sidebar() { document.getElementById("navbar-2").style.width="0"; }
-        function open_win() { var win_opened_audio = new Audio('assets/audio/fx/open_win.mp3'); win_opened_audio.play(); }
-        function close_win() { var win_closed_audio = new Audio('assets/audio/fx/close_win.mp3'); win_closed_audio.play(); }
-        function switch_win_type() { var type_audio = new Audio('assets/audio/fx/switch_type.mp3'); type_audio.play(); }
-        function switch_task_type() { var task_audio = new Audio('assets/audio/fx/switch_task.mp3'); task_audio.play(); }
-        function switch_image(img) { document.getElementById("img_display").style.backgroundImage = `url(${img})`; open_win(); }
-
-    </script>
 </body>
 </html>
