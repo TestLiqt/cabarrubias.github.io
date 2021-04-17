@@ -40,13 +40,13 @@ sidebar {
 page {
     grid-area: page;
     overflow-y: scroll; 
-} page h1 {
+}  .liyue_intro h1 {
     color: white;
     text-align: center;
-    font-size: 85px;
+    font-size: 75px;
     text-shadow: 3px 3px 4px rgb(31, 31, 31);
     padding-top: 5%;
-} page p {
+} .liyue_intro p {
     color: white;
     font-size: 22px;
     text-shadow: 2px 2px 4px rgb(31, 31, 31);

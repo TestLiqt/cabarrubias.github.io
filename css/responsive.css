@@ -1,6 +1,6 @@
 /* All responsive CSS code will be placed here. */
 
-@media only screen and (max-width: 1024px) /* Recommended width for phones. */ {
+@media screen and (max-width: 1024px) /* Recommended width for phones. */ {
     grid-display {
         display: grid;
         grid-template-columns: 0fr 1fr;
@@ -30,9 +30,9 @@
         display: none;
     }
 
-    page h1 {
+    .liyue_intro h1 {
         font-size: 75px;
-    } page p {
+    } .liyue_intro p {
         font-size: 20px;
     }
 
@@ -53,9 +53,18 @@
     }
 
     .item_display {
+        display: flex;
+        flex-direction: column;
         margin: 20px 20px;
         width: 90%;
+        overflow-y: scroll;
+        width: 100%;
     }
+
+    .img_display {
+        display: none;
+    }
+
 }
 
 /*For only specific panels. */
