@@ -71,7 +71,7 @@
                     <div class="item-selector">
                         <div class="item" onclick="switch_image('assets/specialties/chili.png'); add_character('assets/ascension/xiangling.png', 'Xiangling', 'assets/icons/rarity_4.png', 1); remove_character(2); remove_character(3); change_item('juyeun_chili');"><img src="assets/specialties/chili.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/cor_lapis.png'); add_character('assets/ascension/chongyun.png', 'Chongyun', 'assets/icons/rarity_4.png', 1); add_character('assets/ascension/keqing.png', 'Keqing', 'assets/icons/rarity_5.png', 2); add_character('assets/ascension/zhongli.png', 'Zhongli', 'assets/icons/rarity_5.png', 3); change_item('cor_lapis');"><img src="assets/specialties/cor_lapis.png"></div>
-                        <div class="item" onclick="switch_image('assets/specialties/glaze_lily.png')"><img src="assets/specialties/glaze_lily.png"></div>
+                        <div class="item" onclick="switch_image('assets/specialties/glaze_lily.png'); add_character('assets/ascension/ningguang.png', 'Ningguang', 'assets/icons/rarity_4.png', 1); change_item('glaze_lily'); remove_character(2); remove_character(3);"><img src="assets/specialties/glaze_lily.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/jade.png')"><img src="assets/specialties/jade.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/qingxin.png')"><img src="assets/specialties/qingxin.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/silk_flower.png')"><img src="assets/specialties/silk_flower.png"></div>
@@ -91,7 +91,10 @@
                                 Wanmin Restaurant carries 5 Jueyun Chili in stock, refreshing at daily reset every 2 days. There is a quest-exclusive variant of this ingredient, Fresh Jueyun Chili.      
                                 Following one of Manie's dialogue branches for the first time gives 5 Jueyun Chilis.</p>
                             <div class="padding"></div>
-                            <div class="lazy_table" id="lazy_table">
+                            <h2>Ascension Usage</h2>
+                            <hr>
+                            <div class="padding"></div>
+                            <div class="lazy_table" id="lazy_table">      
                                 <table id="ascension_usage">
                                     <tr>
                                       <th>Icon</th>
@@ -110,7 +113,7 @@
                                     </tr>
                                     <tr>
                                         <td><img id="row-3-char_icon"></td>
-                                        <td id="row-3-char_name">Xiangling</td>
+                                        <td id="row-3-char_name"></td>
                                         <td><img id="row-3-char_rarity"></td>
                                     </tr>
                                 </table>

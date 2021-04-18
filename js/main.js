@@ -76,6 +76,10 @@ let cor_lapis_title = "Cor Lapis";
 let cor_lapis_desc_1 = "Cor Lapis is found within the Liyue region, inside caves, mines, and near mountainous terrain. A precious crystal of condensed pure Geo element that usually grows along with other minerals. It's also commonly called 'Cor Petrae.'";
 let cor_lapis_desc_2 = "Cor Lapis is also sold by Changshun. The Commission quest Diamond in the Rough... has a chance of rewarding either a Cor Lapis or a Noctilucous Jade for picking a winner. Cor Lapis is abundant all across Liyue, especially at the base of its mountains and cliffs. Pinpoint its exact locations in the interactive Genshin Impact map!";
 
+let glaze_lily_title = "Glaze Lily";
+let glaze_lily_desc_1 = "An extremely ancient flower that was said to be commonly seen in Liyue. It transforms the memories of the land into its fragrance during florescence. Glaze Lilies can be found exclusively within the Liyue Region. Upon choosing a certain dialogue path, Madame Ping gives 5 Glaze Lillies once. Glaze Lilies (up to 3 every three days) can also be purchased from Ms. Bai in Qingce Village for an exorbitant amount of 50,000 Mora each. Respawn rate 48 hours based on user testing and research.";
+let glaze_lily_desc_2 = "An extremely ancient flower, said to have once been a common sight in Liyue. It transforms the memories of the land into its fragrance during florescence. Legend has it that the flower will open at the sound of pure, beautiful music, and that there was once one who loved this flower more than any other. Now, however, the sight of a Glaze Lily in full bloom out in the wild is a rare one indeed.";
+
 function change_item(what_item) {
     if (what_item == 'juyeun_chili') {
         item_description_data['title'].innerHTML = juyeun_chili_title;
@@ -85,6 +89,10 @@ function change_item(what_item) {
         item_description_data['title'].innerHTML = cor_lapis_title;
         item_description_data['d1'].innerHTML = cor_lapis_desc_1;
         item_description_data['d2'].innerHTML = cor_lapis_desc_2;
+    } if (what_item == 'glaze_lily') {
+        item_description_data['title'].innerHTML = glaze_lily_title;
+        item_description_data['d1'].innerHTML = glaze_lily_desc_1;
+        item_description_data['d2'].innerHTML = glaze_lily_desc_2;
     }
 }
 

@@ -59,8 +59,15 @@
     margin: 3% 3%;
 }
 
-.item_description > h1,h2,h3,h4 {
+.item_description > h1 {
     font-size: 65px;
+    text-shadow: 3px 3px 4px rgb(31, 31, 31);
+    color: #F4D8A8;
+    transition: 0.3s;
+}
+
+.item_description > h2 {
+    font-size: 40px;
     text-shadow: 3px 3px 4px rgb(31, 31, 31);
     color: #F4D8A8;
     transition: 0.3s;
