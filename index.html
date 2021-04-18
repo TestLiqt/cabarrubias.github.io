@@ -20,7 +20,7 @@
                 <img class="responsive_sidebar_icon" src="assets/icons/sidebar.png" onclick="open_sidebar(); open_win();">
                 <a href="https://genshin.mihoyo.com/en/home" class="hoverable"><img class="genshin_logo" src="assets/genshin_logo.png"></a>
                 <a href=#firstpart class="hoverable" id="topnav">Home</a>
-                <a href=#markets class="hoverable" id="topnav">Markets</a>
+                <a href=#characters class="hoverable" id="topnav">Characters</a>
                 <a href=#products class="hoverable" id="topnav">Specialties</a>
                 <a href=#about class="hoverable" id="topnav">About</a>
             </div>
@@ -31,16 +31,19 @@
                     <img class="closebtn" src="assets/icons/x.png" onclick="close_sidebar(); close_win();">
                 </div>
                 <a href="#firstpart" onclick="switch_win_type();">Home</a>
-                <a href=#markets onclick="switch_win_type();">Markets</a>
-                    <div class="_sub">Dongsheng</div>
-                    <div class="_sub">Wanmin Restaurant</div>
-                    <div class="_sub">Master Zhang</div>
-                    <div class="_sub">Verr Goldet</div>
-                    <div class="_sub">Herbalist Gui</div>
-                    <div class="_sub">Shitou</div>
-                    <div class="_sub">Bolai</div>
-                    <div class="_sub">Uncle Sun</div>
-                    <div class="_sub">Uncle Gao</div>
+                <a href=#characters onclick="switch_win_type();">Characters</a>
+                    <div class="_sub"><img src="assets/ascension/xiao.png">Xiao</div>
+                    <div class="_sub"><img src="assets/ascension/beidou.png">Beidou</div>
+                    <div class="_sub"><img src="assets/ascension/ningguang.png">Ningguang</div>
+                    <div class="_sub"><img src="assets/ascension/xiangling.png">Xiangling</div>
+                    <div class="_sub"><img src="assets/ascension/xingqiu.png">Xingqiu</div>
+                    <div class="_sub"><img src="assets/ascension/qiqi.png">Qiqi</div>
+                    <div class="_sub"><img src="assets/ascension/keqing.png">Keqing</div>
+                    <div class="_sub"><img src="assets/ascension/childe.png">Tartaglia</div>
+                    <div class="_sub"><img src="assets/ascension/zhongli.png">Zhongli</div>
+                    <div class="_sub"><img src="assets/ascension/xinyan.png">Xinyan</div>
+                    <div class="_sub"><img src="assets/ascension/ganyu.png">Ganyu</div>
+                    <div class="_sub"><img src="assets/ascension/hu_tao.png">Hu Tao</div>
                 <a href=#products onclick="switch_win_type();">Specialties</a>
                     <div class="_sub"><img src="assets/specialties/chili.png">Juyeun Chili</div>
                     <div class="_sub"><img src="assets/specialties/cor_lapis.png">Cor Lapis</div>
@@ -61,8 +64,8 @@
                     innumerable goods change hands and grace the seven nations with their presence. </p>
                 </div>
             </div>
-            <a name="markets">
-                <div class="markets_section">
+            <a name="characters">
+                <div class="characters_section">
                     <!--To be continued-->
                 </div>
             </a>
@@ -72,11 +75,11 @@
                         <div class="item" onclick="switch_image('assets/specialties/chili.png'); add_character('assets/ascension/xiangling.png', 'Xiangling', 'assets/icons/rarity_4.png', 1); remove_character(2); remove_character(3); change_item('juyeun_chili');"><img src="assets/specialties/chili.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/cor_lapis.png'); add_character('assets/ascension/chongyun.png', 'Chongyun', 'assets/icons/rarity_4.png', 1); add_character('assets/ascension/keqing.png', 'Keqing', 'assets/icons/rarity_5.png', 2); add_character('assets/ascension/zhongli.png', 'Zhongli', 'assets/icons/rarity_5.png', 3); change_item('cor_lapis');"><img src="assets/specialties/cor_lapis.png"></div>
                         <div class="item" onclick="switch_image('assets/specialties/glaze_lily.png'); add_character('assets/ascension/ningguang.png', 'Ningguang', 'assets/icons/rarity_4.png', 1); change_item('glaze_lily'); remove_character(2); remove_character(3);"><img src="assets/specialties/glaze_lily.png"></div>
-                        <div class="item" onclick="switch_image('assets/specialties/jade.png')"><img src="assets/specialties/jade.png"></div>
-                        <div class="item" onclick="switch_image('assets/specialties/qingxin.png')"><img src="assets/specialties/qingxin.png"></div>
-                        <div class="item" onclick="switch_image('assets/specialties/silk_flower.png')"><img src="assets/specialties/silk_flower.png"></div>
-                        <div class="item" onclick="switch_image('assets/specialties/starconch.png')"><img src="assets/specialties/starconch.png"></div>
-                        <div class="item" onclick="switch_image('assets/specialties/violetgrass.png')"><img src="assets/specialties/violetgrass.png"></div>
+                        <div class="item" onclick="switch_image('assets/specialties/jade.png'); add_character('assets/ascension/beidou.png', 'Beidou', 'assets/icons/rarity_4.png', 1); change_item('jade'); remove_character(2); remove_character(3);"><img src="assets/specialties/jade.png"></div>
+                        <div class="item" onclick="switch_image('assets/specialties/qingxin.png'); add_character('assets/ascension/xiao.png', 'Xiao', 'assets/icons/rarity_5.png', 1); add_character('assets/ascension/ganyu.png', 'Ganyu', 'assets/icons/rarity_5.png', 2); change_item('qingxin'); remove_character(3);"><img src="assets/specialties/qingxin.png"></div>
+                        <div class="item" onclick="switch_image('assets/specialties/silk_flower.png'); add_character('assets/ascension/hu_tao.png', 'Hu Tao', 'assets/icons/rarity_5.png', 1); add_character('assets/ascension/xingqiu.png', 'Xingqiu', 'assets/icons/rarity_4.png', 2); change_item('silk_flower'); remove_character(3);"><img src="assets/specialties/silk_flower.png"></div>
+                        <div class="item" onclick="switch_image('assets/specialties/starconch.png'); add_character('assets/ascension/childe.png', 'Tartaglia', 'assets/icons/rarity_5.png', 1); change_item('starconch'); remove_character(2); remove_character(3);"><img src="assets/specialties/starconch.png"></div>
+                        <div class="item" onclick="switch_image('assets/specialties/violetgrass.png'); add_character('assets/ascension/qiqi.png', 'Qiqi', 'assets/icons/rarity_5.png', 1); add_character('assets/ascension/xinyan.png', 'Xinyan', 'assets/icons/rarity_4.png', 2); change_item('violetgrass'); remove_character(3);"><img src="assets/specialties/violetgrass.png"></div>
                     </div>
 
                     <div class="item_display">
