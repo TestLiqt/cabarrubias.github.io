@@ -37,10 +37,17 @@
     box-shadow: 6px 6px rgba(1, 1, 1, 0.6);
     display: flex;
     overflow-y: scroll;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
-} .item_display::-webkit-scrollbar {
-    display: none;
+} 
+
+.item_display::-webkit-scrollbar {
+    width: 10px;
+}.item_display::-webkit-scrollbar-track {
+    background: #222326; 
+}.item_display::-webkit-scrollbar-thumb {
+    background: #52555B; 
+    border-radius: 10px;
+}.item_display::-webkit-scrollbar-thumb:hover {
+    background: #F4D8A8; 
 }
 
 .img_display {

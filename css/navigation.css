@@ -59,11 +59,7 @@
     transition: 0.5s;
     overflow-x: hidden;
     padding-top: 65px;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
     z-index: 5; 
-} .sidebar-flex::-webkit-scrollbar {
-    display: none;
 } .sidebar-flex:hover {
     
 } .sidebar-flex > a {
@@ -100,6 +96,15 @@
     background: #EFEFEF;
 } .sidebar-flex > ._sub > img {
     width: 10%;
+} .sidebar-flex::-webkit-scrollbar {
+    width: 5px;
+}.sidebar-flex::-webkit-scrollbar-track {
+    background: #E5E5E5; 
+}.sidebar-flex::-webkit-scrollbar-thumb {
+    background: #E5E5E5; 
+    border-radius: 10px;
+}.sidebar-flex::-webkit-scrollbar-thumb:hover {
+    background: #F4D8A8; 
 }
 
 .sidebar_header { 
