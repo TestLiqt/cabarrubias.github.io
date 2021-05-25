@@ -1,2 +1,2 @@
-# cabarrubias.github.io
-Yeyeyeyeye
+# Genshin Info page
+Website for school project.
